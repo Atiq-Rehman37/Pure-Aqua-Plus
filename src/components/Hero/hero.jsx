@@ -9,7 +9,7 @@ const hero = () => {
         <div className="row">
           <div className="col-md-8">
             <h1 className="fw-bold display-4">
-              Pure Fresh <br /> Water You Can <br /> Trust
+              To Pure <br /> For This <br /> Trust World
             </h1>
             <p className="mt-3 fs-5">
               Discover the natural taste of life with <b>PURE AQUA PLUS</b>{" "}
