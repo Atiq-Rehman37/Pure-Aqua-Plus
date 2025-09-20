@@ -1,0 +1,13 @@
+.accordion-button-custom {
+  background: #ffffff;
+  padding: 1.2rem;
+  font-size: 1rem;
+  border: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.accordion-button-custom:hover {
+  background: #0dcaf0;
+  color: #fff;
+}

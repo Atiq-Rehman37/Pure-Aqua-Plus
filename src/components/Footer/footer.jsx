@@ -7,6 +7,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import "./footer.css";
+
 const footer = () => {
   return (
     <footer className="text-light pt-5">
@@ -33,15 +34,15 @@ const footer = () => {
           <div className="col-md-5 mb-4">
             <h5 className="fw-bold">Address</h5>
             <p>
-              <FaMapMarkerAlt className="text-info me-2" /> Baraf Khana Chowk ,
-              misrial road, Rawalpindi
+              <FaMapMarkerAlt className="text-info me-2" /> Baraf Khana Chowk,
+              Misrial Road, Rawalpindi
             </p>
             <p>
               <FaPhoneAlt className="text-info me-2" /> Call Us: 0335 5581089
             </p>
 
-            <div className="">
-              <p>Socail Platforms : </p>
+            <div>
+              <p>Social Platforms:</p>
               <a
                 href="https://facebook.com"
                 target="_blank"
@@ -100,7 +101,7 @@ const footer = () => {
           <div className="mb-3 mb-md-0">
             <p className="mb-0">
               &copy; {new Date().getFullYear()} Pure Aqua Plus | All Rights
-              Reserved |<span> Developed by Pure Aqua Plus Team !</span>
+              Reserved | <span>Developed by Pure Aqua Plus Team!</span>
             </p>
           </div>
         </div>

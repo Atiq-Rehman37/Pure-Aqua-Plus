@@ -27,3 +27,26 @@ h6 {
 .text-color2 {
   color: #042b8a;
 }
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #3046b7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #17a2b8;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #138496;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #17a2b8 #0e153a;
+}
