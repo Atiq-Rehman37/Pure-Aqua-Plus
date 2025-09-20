@@ -1,9 +1,9 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
 import { FaQuestionCircle, FaTint, FaTruck, FaRecycle } from "react-icons/fa";
-import "./Facts.css";
+import "./facts.css";
 
-const Facts = () => {
+const facts = () => {
   const faq = [
     {
       id: "faq1",
@@ -67,4 +67,4 @@ const Facts = () => {
   );
 };
 
-export default Facts;
+export default facts;
