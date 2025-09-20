@@ -7,7 +7,7 @@ const hero = () => {
     <div className="hero-section d-flex align-items-center">
       <div className="container text-white">
         <div className="row">
-          <div className="col-md-8">
+          <div className="col-md-8 col-12">
             <h1 className="fw-bold display-4">
               To Pure <br /> For This <br /> Trust World
             </h1>
