@@ -52,7 +52,7 @@ const Pricing = () => {
                   <h6 className="text-info my-3">Price: {product.price}</h6>
                 </div>
                 <a
-                  href={`https://wa.me/${whatsappNumber}?text=Hello! I want to order ${product.image} ${product.title} for ${product.price}.`}
+                  href={`https://wa.me/${whatsappNumber}?text=Hello! I want to order ${product.title} for ${product.price}.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-whatsapp fw-bold py-2 px-4 rounded-pill d-flex align-items-center justify-content-center gap-2"
