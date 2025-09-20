@@ -3,7 +3,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 const CallToAction = () => {
   return (
-    <section className="bg-color1 text-white  py-5 border-top border-bottom  border-3 border-info">
+    <section className="bg-color1 text-white  py-5 border-top  border-3 border-info">
       <div className="container">
         <div className="row align-items-center justify-content-center">
           {/* Text */}

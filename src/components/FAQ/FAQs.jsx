@@ -8,7 +8,7 @@ import {
 } from "react-accessible-accordion";
 import { FaQuestionCircle, FaTint, FaTruck, FaRecycle } from "react-icons/fa";
 import "react-accessible-accordion/dist/fancy-example.css";
-import "./faq.css";
+import "./faqs.css";
 
 const faqs = () => {
   const faq = [
