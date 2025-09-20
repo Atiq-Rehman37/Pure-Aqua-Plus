@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+.bg-color1 {
+  background-color: #042b8a;
+}
+.bg-color2 {
+  background-color: #dee7ef;
+}
+.text-color1 {
+  color: #00d1f9;
+}
+.text-color2 {
+  color: #042b8a;
+}
