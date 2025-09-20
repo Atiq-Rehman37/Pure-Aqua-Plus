@@ -1,32 +1,48 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link, NavLink } from "react-router-dom";
 import "./header.css";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  // NavLink active class styling
+  const activeClass = ({ isActive }) => (isActive ? "active-link" : "");
 
   return (
     <header className="header position-sticky top-0">
       <div className="container d-flex justify-content-between align-items-center">
         {/* Logo + Text */}
-        <div className="logo-section">
+        <Link to="/" className="logo-section text-decoration-none">
           <img src="/images/logo.jpg" alt="Logo" className="logo-img" />
           <div className="logo-text">
             <h4 className="brand-name">
               Pure <br /> <span>Aqua</span> Plus
             </h4>
           </div>
-        </div>
+        </Link>
 
         {/* Desktop Menu */}
         <nav className="menu d-none d-md-flex">
-          <a href="#shop">Shop</a>
-          <a href="#blog">Blog</a>
-          <a href="#about">About Us</a>
-          <a href="#career">Career</a>
-          <a href="#contact">Contact Us</a>
+          <NavLink to="/" className={activeClass}>
+            Home
+          </NavLink>
+          <NavLink to="/shop" className={activeClass}>
+            Shop
+          </NavLink>
+          <NavLink to="/blog" className={activeClass}>
+            Blog
+          </NavLink>
+          <NavLink to="/about" className={activeClass}>
+            About Us
+          </NavLink>
+          <NavLink to="/career" className={activeClass}>
+            Career
+          </NavLink>
+          <NavLink to="/contact" className={activeClass}>
+            Contact Us
+          </NavLink>
         </nav>
 
         {/* Mobile Hamburger */}
@@ -43,38 +59,38 @@ const Header = () => {
       <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
         <div className="menu-content">
           <FaTimes size={24} className="close-icon" onClick={toggleMenu} />
-          <a href="#shop" onClick={toggleMenu}>
+          <NavLink to="/shop" className={activeClass} onClick={toggleMenu}>
             <span>
               <img
                 src={"/images/logo.jpg"}
-                height={"30px"}
+                height="30px"
                 alt="Logo"
                 className="me-2 rounded"
               />
             </span>{" "}
             Pure <span className="text-color1">Aqua</span> Plus
-          </a>
-          <a href="#shop" onClick={toggleMenu}>
+          </NavLink>
+          <NavLink to="/shop" className={activeClass} onClick={toggleMenu}>
             Shop
-          </a>
-          <a href="#blog" onClick={toggleMenu}>
+          </NavLink>
+          <NavLink to="/blog" className={activeClass} onClick={toggleMenu}>
             Blog
-          </a>
-          <a href="#about" onClick={toggleMenu}>
+          </NavLink>
+          <NavLink to="/about" className={activeClass} onClick={toggleMenu}>
             About Us
-          </a>
-          <a href="#career" onClick={toggleMenu}>
+          </NavLink>
+          <NavLink to="/career" className={activeClass} onClick={toggleMenu}>
             Career
-          </a>
-          <a href="#contact" onClick={toggleMenu}>
+          </NavLink>
+          <NavLink to="/contact" className={activeClass} onClick={toggleMenu}>
             Contact Us
-          </a>
+          </NavLink>
         </div>
 
         {/* Bottom Info */}
         <div className="info">
           <h4 className="mb-3">Our Address</h4>
-          <p className="mb-3"> Baraf Khana Chowk , misrial road, Rawalpindi</p>
+          <p className="mb-3">Baraf Khana Chowk, Misrial Road, Rawalpindi</p>
           <p>
             <a href="tel:+923001234567" className="phone-link">
               +92 335 5581089

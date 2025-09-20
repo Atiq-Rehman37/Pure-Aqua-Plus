@@ -1,6 +1,7 @@
 import React from "react";
 import { FaTint } from "react-icons/fa";
 import "./hero.css";
+import { Link } from "react-router-dom";
 
 const hero = () => {
   return (
@@ -17,11 +18,19 @@ const hero = () => {
               hydrated, healthy, and refreshed every day.
             </p>
             <div className="mt-5">
-              <button className="btn-custom btn-shop me-3">
+              <Link
+                to="/shop"
+                className="btn-custom btn-shop me-3 text-decoration-none"
+              >
                 <FaTint className="me-2" />
                 Shop Now
-              </button>
-              <button className="btn-custom btn-about">About Us</button>
+              </Link>
+              <Link
+                to="/about"
+                className="btn-custom btn-about text-decoration-none"
+              >
+                About Us
+              </Link>
             </div>
           </div>
         </div>

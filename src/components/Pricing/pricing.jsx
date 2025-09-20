@@ -1,6 +1,7 @@
 import React from "react";
 import { FaWhatsapp, FaArrowRight } from "react-icons/fa";
 import "./pricing.css";
+import { Link } from "react-router-dom";
 
 const Pricing = () => {
   const products = [
@@ -63,9 +64,12 @@ const Pricing = () => {
             </div>
           ))}
         </div>
-        <button className="btn btn-whatsapp mt-3 px-3 py-2 ">
+        <Link
+          to="/shop"
+          className="btn btn-whatsapp mt-3 px-3 py-2 text-decoration-none"
+        >
           View All Products <FaArrowRight />{" "}
-        </button>
+        </Link>
       </div>
 
       {/* Bottom-right rotating shape */}

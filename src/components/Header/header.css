@@ -138,3 +138,9 @@
 .phone-link:hover {
   text-decoration: underline;
 }
+
+.menu a.active-link,
+.menu-content a.active-link {
+  color: #0dcaf0; /* highlight color for active link */
+  font-weight: bold;
+}
