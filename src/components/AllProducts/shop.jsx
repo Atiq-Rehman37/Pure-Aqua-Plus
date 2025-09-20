@@ -27,6 +27,7 @@ const Shop = () => {
   const [sortOrder, setSortOrder] = useState(""); // "low" or "high"
   const whatsappNumber = "+923355581089";
 
+  // Sort products whenever sortOrder changes
   useEffect(() => {
     let sortedProducts = [...initialProducts];
     if (sortOrder === "low") {
@@ -45,26 +46,29 @@ const Shop = () => {
         </p>
         <h2 className="fw-bold mb-3">We Deliver Best Quality Bottle Packs.</h2>
 
-        {/* New row: total products + sort select with filter icon */}
+        {/* Total Products + Sort Dropdown */}
         <div className="row mb-4 align-items-center border pt-3 pb-3">
-          <div className="col-md-6 text-start">
+          <div className="col-12 d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap">
+            {/* Left: Total Products */}
             <strong>Total Products: {products.length}</strong>
-          </div>
-          <div className="col-md-6 text-end d-flex justify-content-end align-items-center gap-2">
-            <FaFilter size={20} className="text-info" />
-            <select
-              className="form-select w-auto d-inline-block custom-select"
-              value={sortOrder}
-              onChange={(e) => setSortOrder(e.target.value)}
-            >
-              <option value="">Sort by Price</option>
-              <option value="low">Low to High</option>
-              <option value="high">High to Low</option>
-            </select>
+
+            {/* Right: Filter + Select */}
+            <div className="d-flex align-items-center gap-2 mt-2 mt-md-0">
+              <FaFilter size={20} className="text-info" />
+              <select
+                className="form-select w-auto custom-select"
+                value={sortOrder}
+                onChange={(e) => setSortOrder(e.target.value)}
+              >
+                <option value="">Sort by Price</option>
+                <option value="low">Low to High</option>
+                <option value="high">High to Low</option>
+              </select>
+            </div>
           </div>
         </div>
 
-        {/* Products grid */}
+        {/* Products Grid */}
         <div className="row">
           {products.map((product, index) => (
             <div className="col-md-4 mb-4" key={index}>
