@@ -1,13 +1,31 @@
-.accordion-button-custom {
-  background: #ffffff;
-  padding: 1.2rem;
+/* Style for Bootstrap accordion button */
+.accordion-button {
+  background: #ffffff !important;
+  padding: 1.2rem !important;
   font-size: 1rem;
   border: none !important;
-  cursor: pointer;
+  box-shadow: none !important;
   transition: all 0.3s ease;
+  font-weight: 600;
 }
 
-.accordion-button-custom:hover {
-  background: #0dcaf0;
-  color: #fff;
+/* Hover effect */
+.accordion-button:hover {
+  background: #0dcaf0 !important;
+  color: #fff !important;
+}
+
+/* When accordion item is active/open */
+.accordion-button:not(.collapsed) {
+  background: #0dcaf0 !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+
+/* Accordion body */
+.accordion-body {
+  background: #f8f9fa;
+  font-size: 0.95rem;
+  color: #6c757d;
+  padding: 1rem 1.2rem;
 }

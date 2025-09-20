@@ -1,13 +1,6 @@
 import React from "react";
-import {
-  Accordion,
-  AccordionItem,
-  AccordionItemHeading,
-  AccordionItemButton,
-  AccordionItemPanel,
-} from "react-accessible-accordion";
+import Accordion from "react-bootstrap/Accordion";
 import { FaQuestionCircle, FaTint, FaTruck, FaRecycle } from "react-icons/fa";
-import "react-accessible-accordion/dist/fancy-example.css";
 import "./faqs.css";
 
 const faqs = () => {
@@ -50,23 +43,23 @@ const faqs = () => {
         </p>
         <h2 className="fw-bold text-center mb-5">Frequently Asked Questions</h2>
 
-        {/* ✅ First item open by default */}
-        <Accordion allowZeroExpanded preExpanded={["faq1"]}>
-          {faq.map((faq) => (
-            <AccordionItem
-              uuid={faq.id}
-              key={faq.id}
+        {/* ✅ Bootstrap Accordion, first item open by default */}
+        <Accordion defaultActiveKey="0" alwaysOpen>
+          {faq.map((item, index) => (
+            <Accordion.Item
+              eventKey={String(index)}
+              key={item.id}
               className="mb-3 shadow-sm rounded"
             >
-              <AccordionItemHeading>
-                <AccordionItemButton className="accordion-button-custom d-flex align-items-center fw-bold">
-                  {faq.icon} {faq.question}
-                </AccordionItemButton>
-              </AccordionItemHeading>
-              <AccordionItemPanel>
-                <p className="text-muted">{faq.answer}</p>
-              </AccordionItemPanel>
-            </AccordionItem>
+              <Accordion.Header>
+                <div className="d-flex align-items-center fw-bold">
+                  {item.icon} {item.question}
+                </div>
+              </Accordion.Header>
+              <Accordion.Body>
+                <p className="text-muted">{item.answer}</p>
+              </Accordion.Body>
+            </Accordion.Item>
           ))}
         </Accordion>
       </div>
