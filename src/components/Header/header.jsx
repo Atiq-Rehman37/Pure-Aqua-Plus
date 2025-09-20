@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import "./Header.css";
+import "./header.css";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
