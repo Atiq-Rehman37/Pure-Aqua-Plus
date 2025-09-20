@@ -1,6 +1,6 @@
 import React from "react";
 import { FaTint } from "react-icons/fa";
-import "./Hero.css";
+import "./hero.css";
 
 const hero = () => {
   return (
