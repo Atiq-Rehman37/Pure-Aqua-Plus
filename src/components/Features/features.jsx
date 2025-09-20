@@ -40,7 +40,7 @@ const features = () => {
       </div>
 
       <div className="container py-5">
-        <p className="text-info fw-bold fs-4">Trusted Quality Features</p>
+        <p className="text-info fw-bold fs-4">| Trusted Quality Features |</p>
         <h2 className="fw-bold mb-5">Our Commitment to Quality</h2>
         <div className="row">
           {features.map((feature, index) => (
