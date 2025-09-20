@@ -15,7 +15,7 @@ const Header = () => {
           <img src="/images/logo.jpg" alt="Logo" className="logo-img" />
           <div className="logo-text">
             <h4 className="brand-name">
-              Pure <span>Aqua</span> Plus
+              Pure <br /> <span>Aqua</span> Plus
             </h4>
           </div>
         </div>

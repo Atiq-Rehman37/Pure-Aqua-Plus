@@ -10,18 +10,12 @@
 /* Logo section */
 .logo-section {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
 }
 
 .logo-img {
-  height: 40px;
-  width: auto;
-  margin-bottom: 5px;
-}
-
-.logo-text {
-  line-height: 1.2;
+  height: 60px;
+  width: 40px;
 }
 
 .brand-name {
@@ -30,6 +24,7 @@
   font-size: 1.2rem;
   margin: 0;
   color: #042b8a; /* blue */
+  line-height: normal;
 }
 
 .brand-name span {
