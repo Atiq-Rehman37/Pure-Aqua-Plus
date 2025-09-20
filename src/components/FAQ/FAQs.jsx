@@ -1,4 +1,3 @@
-// src/components/FAQ.jsx
 import React from "react";
 import {
   Accordion,
@@ -11,8 +10,8 @@ import { FaQuestionCircle, FaTint, FaTruck, FaRecycle } from "react-icons/fa";
 import "react-accessible-accordion/dist/fancy-example.css";
 import "./faq.css";
 
-const FAQs = () => {
-  const faqs = [
+const faqs = () => {
+  const faq = [
     {
       id: "faq1",
       icon: <FaTint className="text-info me-3" size={20} />,
@@ -53,7 +52,7 @@ const FAQs = () => {
 
         {/* ✅ First item open by default */}
         <Accordion allowZeroExpanded preExpanded={["faq1"]}>
-          {faqs.map((faq) => (
+          {faq.map((faq) => (
             <AccordionItem
               uuid={faq.id}
               key={faq.id}
@@ -75,4 +74,4 @@ const FAQs = () => {
   );
 };
 
-export default FAQs;
+export default faqs;
