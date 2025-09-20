@@ -1,0 +1,7 @@
+footer {
+  background: linear-gradient(to bottom, #001f54, #002b7f);
+}
+
+footer a:hover {
+  color: #00c3ff !important;
+}

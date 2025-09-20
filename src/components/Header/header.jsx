@@ -44,6 +44,17 @@ const Header = () => {
         <div className="menu-content">
           <FaTimes size={24} className="close-icon" onClick={toggleMenu} />
           <a href="#shop" onClick={toggleMenu}>
+            <span>
+              <img
+                src={"/images/logo.jpg"}
+                height={"30px"}
+                alt="Logo"
+                className="me-2 rounded"
+              />
+            </span>{" "}
+            Pure <span className="text-color1">Aqua</span> Plus
+          </a>
+          <a href="#shop" onClick={toggleMenu}>
             Shop
           </a>
           <a href="#blog" onClick={toggleMenu}>
@@ -62,11 +73,11 @@ const Header = () => {
 
         {/* Bottom Info */}
         <div className="info">
-          <h4>Our Address</h4>
-          <p>Baraf Khana Chowk, Rawalpindi</p>
+          <h4 className="mb-3">Our Address</h4>
+          <p className="mb-3"> Baraf Khana Chowk , misrial road, Rawalpindi</p>
           <p>
             <a href="tel:+923001234567" className="phone-link">
-              +92 300 1234567
+              +92 335 5581089
             </a>
           </p>
         </div>
