@@ -8,7 +8,7 @@ const Header = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="header">
+    <header className="header position-sticky top-0">
       <div className="container d-flex justify-content-between align-items-center">
         {/* Logo + Text */}
         <div className="logo-section">
