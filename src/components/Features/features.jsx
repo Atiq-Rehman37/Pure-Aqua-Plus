@@ -6,7 +6,7 @@ import {
   FaGlassWhiskey,
 } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Features.css";
+import "./features.css";
 
 const features = () => {
   const features = [
