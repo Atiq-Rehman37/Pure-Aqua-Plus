@@ -15,8 +15,8 @@ const TopBar = () => {
           Service
         </span>
         <span className="mx-5 flex items-center">
-          <FaMapMarkerAlt className="mr-2 text-color1" size={20} /> Rawalpindi,
-          Pakistan
+          <FaMapMarkerAlt className="mr-2 text-color1" size={20} />
+          BarafKhana Chowk Misryal Road Rawalpindi, Pakistan
         </span>
         <span className="mx-5 flex items-center">
           <FaPhoneAlt className="mr-2 text-color1" size={20} /> +92 300 1234567
