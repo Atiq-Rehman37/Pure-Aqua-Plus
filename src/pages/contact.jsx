@@ -1,5 +1,5 @@
 import React from "react";
-import Form from "../components/ContactSection/Form";
+import Form from "../components/ContactSection/Form.jsx";
 const contact = () => {
   return (
     <div>
