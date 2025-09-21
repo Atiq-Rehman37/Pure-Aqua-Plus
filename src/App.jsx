@@ -5,6 +5,7 @@ import TopBar from "./components/TopBar";
 import Header from "./components/Header/header";
 import Home from "./pages/home";
 import Shop from "./pages/shope";
+import Contact from "./pages/contact";
 import Footer from "./components/Footer/footer";
 import CallToAction from "./components/CallToAction";
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <CallToAction />
         <Footer />
