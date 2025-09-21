@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 const MySwal = withReactContent(Swal);
 
-const contactForm = () => {
+const ContactForm = () => {
   const form = useRef();
 
   // Function to send email
@@ -151,4 +151,4 @@ const contactForm = () => {
   );
 };
 
-export default contactForm;
+export default ContactForm;
