@@ -1,9 +1,9 @@
 import React from "react";
-import ContactForm from "../components/ContactSection/ContactForm";
+import Form from "../components/ContactSection/Form";
 const contact = () => {
   return (
     <div>
-      <ContactForm />
+      <Form />
     </div>
   );
 };

@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
-import "./ContactForm.css";
+import "./Form.css";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 const MySwal = withReactContent(Swal);
 
-const ContactForm = () => {
+const Form = () => {
   const form = useRef();
 
   // Function to send email
@@ -151,4 +151,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default Form;
