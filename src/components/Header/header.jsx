@@ -31,14 +31,8 @@ const Header = () => {
           <NavLink to="/shop" className={activeClass}>
             Shop
           </NavLink>
-          <NavLink to="/blog" className={activeClass}>
-            Blog
-          </NavLink>
           <NavLink to="/about" className={activeClass}>
             About Us
-          </NavLink>
-          <NavLink to="/career" className={activeClass}>
-            Career
           </NavLink>
           <NavLink to="/contact" className={activeClass}>
             Contact Us
@@ -76,14 +70,8 @@ const Header = () => {
           <NavLink to="/shop" className={activeClass} onClick={toggleMenu}>
             Shop
           </NavLink>
-          <NavLink to="/blog" className={activeClass} onClick={toggleMenu}>
-            Blog
-          </NavLink>
           <NavLink to="/about" className={activeClass} onClick={toggleMenu}>
             About Us
-          </NavLink>
-          <NavLink to="/career" className={activeClass} onClick={toggleMenu}>
-            Career
           </NavLink>
           <NavLink to="/contact" className={activeClass} onClick={toggleMenu}>
             Contact Us

@@ -1,0 +1,21 @@
+.mission-vision-section {
+  background: url("/images/shape2.png") no-repeat center center/cover;
+  position: relative;
+  color: #fff;
+}
+
+.mission-vision-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(23, 187, 220, 0.65); */
+  z-index: 1;
+}
+
+.mission-vision-section .container {
+  position: relative;
+  z-index: 2; /* keep content above overlay */
+}
