@@ -70,6 +70,9 @@ const Header = () => {
             </span>{" "}
             Pure <span className="text-color1">Aqua</span> Plus
           </NavLink>
+          <NavLink to="/" className={activeClass} onClick={toggleMenu}>
+            Home
+          </NavLink>
           <NavLink to="/shop" className={activeClass} onClick={toggleMenu}>
             Shop
           </NavLink>

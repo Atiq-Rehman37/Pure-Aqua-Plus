@@ -7,6 +7,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import "./footer.css";
+import { Link } from "react-router-dom";
 
 const footer = () => {
   return (
@@ -52,7 +53,7 @@ const footer = () => {
                 <FaFacebook />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/pure_aqua_plus?igsh=MTB6emFiaTVqNDg1ag=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-light me-3 fs-5"
@@ -75,19 +76,27 @@ const footer = () => {
             <h5 className="fw-bold">Useful Links</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="/about" className="text-light text-decoration-none">
+                <Link to={"/"} className="text-light text-decoration-none">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to={"/about"} className="text-light text-decoration-none">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/shop" className="text-light text-decoration-none">
+                <Link to={"/shop"} className="text-light text-decoration-none">
                   Shop
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contact" className="text-light text-decoration-none">
+                <Link
+                  to={"contact"}
+                  className="text-light text-decoration-none"
+                >
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
