@@ -35,8 +35,8 @@ const footer = () => {
           <div className="col-md-5 mb-4">
             <h5 className="fw-bold">Address</h5>
             <p>
-              <FaMapMarkerAlt className="text-info me-2" /> Baraf Khana Chowk,
-              Misrial Road, Rawalpindi
+              <FaMapMarkerAlt className="text-info me-2" />
+              Street 5, Madni Mohallah, Chak Jalal Din, Girja Road, Rawalpindi
             </p>
             <p>
               <FaPhoneAlt className="text-info me-2" /> Call Us: 0335 5581089
@@ -44,14 +44,6 @@ const footer = () => {
 
             <div>
               <p>Social Platforms:</p>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-light me-3 fs-5"
-              >
-                <FaFacebook />
-              </a>
               <a
                 href="https://www.instagram.com/pure_aqua_plus?igsh=MTB6emFiaTVqNDg1ag=="
                 target="_blank"
@@ -110,7 +102,7 @@ const footer = () => {
           <div className="mb-3 mb-md-0">
             <p className="mb-0">
               &copy; {new Date().getFullYear()} Pure Aqua Plus | All Rights
-              Reserved | <span>Developed by Pure Aqua Plus Team!</span>
+              Reserved | <span>Developed by ATIQ REHMAN</span>
             </p>
           </div>
         </div>

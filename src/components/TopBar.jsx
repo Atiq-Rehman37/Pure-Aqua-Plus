@@ -16,8 +16,9 @@ const TopBar = () => {
         </span>
         <span className="mx-5 flex items-center">
           <FaMapMarkerAlt className="mr-2 text-color1" size={20} />
-          Baraf Khana Chowk , Misrial road, Rawalpindi
+          Street 5, Madni Mohallah, Chak Jalal Din, Girja Road, Rawalpindi
         </span>
+
         <span className="mx-5 flex items-center">
           <FaPhoneAlt className="mr-2 text-color1" size={20} /> +92 335 5581089
         </span>

@@ -129,7 +129,7 @@ const Form = () => {
           <div className="col-md-6 d-flex">
             <div className="p-2 shadow-sm rounded bg-white w-100 d-flex flex-column">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3323.866146104848!2d73.01500932440825!3d33.58282449237332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbaraf%20khana%20chowk%20misrial%20road%20rawalpindi!5e0!3m2!1sen!2s!4v1758437833666!5m2!1sen!2s"
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3736.0605286911223!2d73.01712644390354!3d33.57573066609943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sStreet%205%2C%20Madni%20Mohallah%2C%20Chak%20Jalal%20Din%2C%20Girja%20Road%2C%20Rawalpindi!5e0!3m2!1sen!2s!4v1758641737504!5m2!1sen!2s"
                 width="100%"
                 title="Google Map"
                 className="flex-grow-1 rounded"

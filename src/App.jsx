@@ -6,6 +6,7 @@ import Header from "./components/Header/header";
 import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer/footer";
 import CallToAction from "./components/CallToAction";
+import { FaWhatsapp } from "react-icons/fa";
 
 //Lazy load pages
 const Home = lazy(() => import("./pages/home"));
@@ -36,6 +37,18 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </Suspense>
+
+        {/* WhatsApp Floating Button */}
+        {/* Modern WhatsApp Floating Button */}
+        <a
+          href="https://wa.me/9203355581089"
+          className="whatsapp-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat on WhatsApp"
+        >
+          <FaWhatsapp size={28} />
+        </a>
 
         <CallToAction />
         <Footer />

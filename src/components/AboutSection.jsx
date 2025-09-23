@@ -6,14 +6,14 @@ import "./about.css"; // ✅ make sure to import your custom css
 const AboutSection = () => {
   const Team = [
     {
-      img: "/images/Director.jpg",
-      name: "Raja Shahid Mahmood",
-      title: "Director",
-    },
-    {
       img: "/images/CEO.jpg",
       name: "Saad Jamil",
       title: "CEO",
+    },
+    {
+      img: "/images/Director.jpg",
+      name: "Raja Shahid Mahmood",
+      title: "Director",
     },
     {
       img: "/images/Manager.jpg",
@@ -55,7 +55,7 @@ const AboutSection = () => {
             </h2>
             <p className="text-muted mb-3">
               Welcome to{" "}
-              <span className="fw-bold text-info">Aqua Pure Plus</span>, where
+              <span className="fw-bold text-info">Pure Aqua Plus</span>, where
               purity meets innovation. Our mission is to deliver premium-quality
               drinking water that not only refreshes but also nourishes your
               body with essential minerals.
