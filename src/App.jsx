@@ -43,7 +43,7 @@ const App = () => {
         {/* WhatsApp Floating Button */}
         {/* WhatsApp Floating Button */}
         <a
-          href="https://wa.me/9203355581089"
+          href="https://wa.me/923355581089"
           className="whatsapp-btn"
           target="_blank"
           rel="noopener noreferrer"
