@@ -13,6 +13,7 @@ const Home = lazy(() => import("./pages/home"));
 const Shop = lazy(() => import("./pages/shope"));
 const AboutUs = lazy(() => import("./pages/aboutus"));
 const Contact = lazy(() => import("./pages/contact"));
+const NotFound = lazy(() => import("./pages/notfound"));
 
 const App = () => {
   return (
@@ -35,11 +36,11 @@ const App = () => {
             <Route path="/shop" element={<Shop />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
 
         {/* WhatsApp Floating Button */}
-        {/* Modern WhatsApp Floating Button */}
         <a
           href="https://wa.me/9203355581089"
           className="whatsapp-btn"
