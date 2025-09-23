@@ -76,3 +76,13 @@ h6 {
 .whatsapp-btn:active {
   transform: scale(0.95);
 }
+/* Default (desktop/tablet) is what you already have */
+
+@media (max-width: 576px) {
+  .whatsapp-btn {
+    bottom: 42px;
+    right: 5px;
+    padding: 10px;
+    font-size: 22px;
+  }
+}

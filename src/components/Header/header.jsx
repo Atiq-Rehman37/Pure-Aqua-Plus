@@ -81,9 +81,11 @@ const Header = () => {
         {/* Bottom Info */}
         <div className="info">
           <h4 className="mb-3">Our Address</h4>
-          <p className="mb-3">Baraf Khana Chowk, Misrial Road, Rawalpindi</p>
+          <p className="mb-3">
+            Street 5, Madni Mohallah, Chak Jalal Din, Girja Road, Rawalpindi
+          </p>
           <p>
-            <a href="tel:+923001234567" className="phone-link">
+            <a href="tel:+923355581089" className="phone-link">
               +92 335 5581089
             </a>
           </p>

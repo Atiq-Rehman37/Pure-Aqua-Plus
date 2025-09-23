@@ -6,6 +6,7 @@ import {
   FaInstagram,
   FaWhatsapp,
 } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa6"; // <-- TikTok icon
 import "./footer.css";
 import { Link } from "react-router-dom";
 
@@ -56,9 +57,17 @@ const footer = () => {
                 href="https://wa.me/923355581089"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-light fs-5"
+                className="text-light me-3 fs-5"
               >
                 <FaWhatsapp />
+              </a>
+              <a
+                href="https://www.tiktok.com/@pure_aqua_plus"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-light fs-5"
+              >
+                <FaTiktok />
               </a>
             </div>
           </div>
@@ -84,7 +93,7 @@ const footer = () => {
               </li>
               <li>
                 <Link
-                  to={"contact"}
+                  to={"/contact"}
                   className="text-light text-decoration-none"
                 >
                   Contact Us
