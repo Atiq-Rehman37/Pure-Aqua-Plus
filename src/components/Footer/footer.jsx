@@ -46,6 +46,14 @@ const footer = () => {
             <div>
               <p>Social Platforms:</p>
               <a
+                href="https://www.facebook.com/share/1B5fzBX3tq/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-light me-3 fs-5"
+              >
+                <FaFacebook />
+              </a>
+              <a
                 href="https://www.instagram.com/pure_aqua_plus?igsh=MTB6emFiaTVqNDg1ag=="
                 target="_blank"
                 rel="noopener noreferrer"

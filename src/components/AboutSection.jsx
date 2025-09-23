@@ -61,7 +61,7 @@ const AboutSection = () => {
               body with essential minerals.
             </p>
             <p className="text-muted mb-4">
-              With Aqua Pure Plus, you don’t just quench your thirst—you invest
+              With Pure Aqua Plus, you don’t just quench your thirst—you invest
               in a healthier future for your family.
             </p>
 
