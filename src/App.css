@@ -66,23 +66,50 @@ h6 {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   transition: all 0.3s ease;
+  position: fixed;
 }
 
 .whatsapp-btn:hover {
-  transform: scale(1.1) rotate(10deg);
+  transform: scale(1.1);
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25), 0 0 12px rgba(37, 211, 102, 0.6);
 }
 
 .whatsapp-btn:active {
   transform: scale(0.95);
 }
-/* Default (desktop/tablet) is what you already have */
 
+/* Tooltip */
+.whatsapp-tooltip {
+  position: absolute;
+  right: 65px;
+  background: #ffffff;
+  color: #000000;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.whatsapp-btn:hover .whatsapp-tooltip {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* Mobile adjustment */
 @media (max-width: 576px) {
   .whatsapp-btn {
     bottom: 42px;
     right: 5px;
     padding: 10px;
     font-size: 22px;
+  }
+
+  .whatsapp-tooltip {
+    right: 55px;
+    font-size: 12px;
   }
 }

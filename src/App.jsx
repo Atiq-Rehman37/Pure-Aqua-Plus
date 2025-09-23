@@ -41,6 +41,7 @@ const App = () => {
         </Suspense>
 
         {/* WhatsApp Floating Button */}
+        {/* WhatsApp Floating Button */}
         <a
           href="https://wa.me/9203355581089"
           className="whatsapp-btn"
@@ -49,6 +50,7 @@ const App = () => {
           aria-label="Chat on WhatsApp"
         >
           <FaWhatsapp size={28} />
+          <span className="whatsapp-tooltip">Chat on WhatsApp</span>
         </a>
 
         <CallToAction />
