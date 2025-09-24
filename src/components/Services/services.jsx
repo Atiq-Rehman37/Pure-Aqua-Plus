@@ -1,6 +1,7 @@
 import React from "react";
 import "./services.css";
 import { FaBone, FaHeartbeat, FaBolt, FaTint } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Services = () => {
   const services = [
@@ -29,21 +30,43 @@ const Services = () => {
   return (
     <section className="service-section text-center text-white py-4 position-relative bg-color1">
       <div className="container py-5">
-        <p className="text-info fw-bold fs-4">
+        {/* Section heading animation */}
+        <motion.p
+          className="text-info fw-bold fs-4"
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
           | <span>Our Services</span> |
-        </p>
-        <h2 className="fw-bold mb-5">
+        </motion.p>
+
+        <motion.h2
+          className="fw-bold mb-5"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           Power-Packed Minerals for Your Health & Wellness
-        </h2>
+        </motion.h2>
+
         <div className="row">
           {services.map((service, index) => (
-            <div className="col-md-3 mb-4" key={index}>
+            <motion.div
+              className="col-md-3 mb-4"
+              key={index}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
+            >
               <div className="service-card bg-light p-4 rounded shadow-lg h-100 py-5">
                 {service.icon}
                 <h5 className="fw-bold text-dark mt-3">{service.title}</h5>
                 <p className="text-muted">{service.desc}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

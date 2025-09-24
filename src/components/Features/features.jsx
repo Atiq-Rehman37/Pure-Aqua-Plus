@@ -7,8 +7,9 @@ import {
 } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./features.css";
+import { motion } from "framer-motion";
 
-const features = () => {
+const Features = () => {
   const features = [
     {
       icon: <FaTint size={50} className="text-info mb-4" />,
@@ -33,24 +34,54 @@ const features = () => {
   ];
 
   return (
-    <section className="features-section text-center py-5 bg-color2 position-relative overflow-hidden">
+    <motion.section
+      className="features-section text-center py-5 bg-color2 position-relative overflow-hidden"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }}
+    >
       {/* Top-left rotating shape */}
       <div className="position-absolute top-0 start-0">
         <img src={"/images/shape.png"} alt="shape" className="shape-img" />
       </div>
 
       <div className="container py-5">
-        <p className="text-info fw-bold fs-4">| Trusted Quality Features |</p>
-        <h2 className="fw-bold mb-5">Our Commitment to Quality</h2>
+        <motion.p
+          className="text-info fw-bold fs-4"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          | Trusted Quality Features |
+        </motion.p>
+        <motion.h2
+          className="fw-bold mb-5"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          Our Commitment to Quality
+        </motion.h2>
+
         <div className="row">
           {features.map((feature, index) => (
-            <div className="col-md-3 mb-4" key={index}>
+            <motion.div
+              className="col-md-3 mb-4"
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: index * 0.2 }}
+              viewport={{ once: true }}
+            >
               <div className="feature-card p-4 shadow-sm rounded bg-white h-100 py-5">
                 {feature.icon}
                 <h5 className="fw-bold mt-3">{feature.title}</h5>
                 <p className="text-muted">{feature.desc}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -59,8 +90,8 @@ const features = () => {
       <div className="position-absolute bottom-0 end-0">
         <img src={"/images/shape.png"} alt="shape" className="shape-img" />
       </div>
-    </section>
+    </motion.section>
   );
 };
 
-export default features;
+export default Features;

@@ -2,6 +2,7 @@ import React from "react";
 import { FaWhatsapp, FaArrowRight } from "react-icons/fa";
 import "./pricing.css";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Pricing = () => {
   const products = [
@@ -32,15 +33,39 @@ const Pricing = () => {
       </div>
 
       <div className="container py-5">
-        <p className="text-info fw-bold fs-4">
+        {/* Animated heading */}
+        <motion.p
+          className="text-info fw-bold fs-4"
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
           | <span>Pricing</span> |
-        </p>
-        <h2 className="fw-bold mb-5">We Deliver Best Quality Bottle Packs.</h2>
+        </motion.p>
+
+        <motion.h2
+          className="fw-bold mb-5"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          We Deliver Best Quality Bottle Packs.
+        </motion.h2>
+
         <div className="row">
           {products.map((product, index) => (
-            <div className="col-md-4 mb-4" key={index}>
+            <motion.div
+              className="col-md-4 mb-4"
+              key={index}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
+            >
               <div
-                className=" shadow-sm rounded bg-white h-100 d-flex flex-column justify-content-between align-items-center p-4"
+                className="shadow-sm rounded bg-white h-100 d-flex flex-column justify-content-between align-items-center p-4"
                 style={{ backgroundColor: "#f5f5f5" }}
               >
                 <img
@@ -61,15 +86,24 @@ const Pricing = () => {
                   <FaWhatsapp size={18} /> Order on WhatsApp
                 </a>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
-        <Link
-          to="/shop"
-          className="btn btn-whatsapp mt-3 px-3 py-2 text-decoration-none"
+
+        {/* Animated button */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          viewport={{ once: true }}
         >
-          View All Products <FaArrowRight />{" "}
-        </Link>
+          <Link
+            to="/shop"
+            className="btn btn-whatsapp mt-3 px-3 py-2 text-decoration-none"
+          >
+            View All Products <FaArrowRight />
+          </Link>
+        </motion.div>
       </div>
 
       {/* Bottom-right rotating shape */}

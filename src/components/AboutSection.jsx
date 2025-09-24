@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaTint, FaTruck, FaRecycle, FaShieldAlt } from "react-icons/fa";
-import "./about.css"; // ✅ make sure to import your custom css
+import "./about.css";
 
 const AboutSection = () => {
   const Team = [

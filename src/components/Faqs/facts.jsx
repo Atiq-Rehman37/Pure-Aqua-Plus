@@ -1,9 +1,10 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
 import { FaQuestionCircle, FaTint, FaTruck, FaRecycle } from "react-icons/fa";
+import { motion } from "framer-motion";
 import "./facts.css";
 
-const facts = () => {
+const Facts = () => {
   const faq = [
     {
       id: "faq1",
@@ -38,28 +39,51 @@ const facts = () => {
   return (
     <section className="faq-section py-5 bg-light">
       <div className="container">
-        <p className="text-info fw-bold fs-4 text-center">
+        {/* Animated heading */}
+        <motion.p
+          className="text-info fw-bold fs-4 text-center"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
           | <span>FAQs</span> |
-        </p>
-        <h2 className="fw-bold text-center mb-5">Frequently Asked Questions</h2>
+        </motion.p>
 
-        {/* ✅ Bootstrap Accordion, first item open by default */}
+        <motion.h2
+          className="fw-bold text-center mb-5"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          Frequently Asked Questions
+        </motion.h2>
+
+        {/* Accordion with animation */}
         <Accordion defaultActiveKey="0" alwaysOpen>
           {faq.map((item, index) => (
-            <Accordion.Item
-              eventKey={String(index)}
+            <motion.div
               key={item.id}
-              className="mb-3 shadow-sm rounded"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
             >
-              <Accordion.Header>
-                <div className="d-flex align-items-center fw-bold">
-                  {item.icon} {item.question}
-                </div>
-              </Accordion.Header>
-              <Accordion.Body>
-                <p className="text-muted">{item.answer}</p>
-              </Accordion.Body>
-            </Accordion.Item>
+              <Accordion.Item
+                eventKey={String(index)}
+                className="mb-3 shadow-sm rounded"
+              >
+                <Accordion.Header>
+                  <div className="d-flex align-items-center fw-bold">
+                    {item.icon} {item.question}
+                  </div>
+                </Accordion.Header>
+                <Accordion.Body>
+                  <p className="text-muted">{item.answer}</p>
+                </Accordion.Body>
+              </Accordion.Item>
+            </motion.div>
           ))}
         </Accordion>
       </div>
@@ -67,4 +91,4 @@ const facts = () => {
   );
 };
 
-export default facts;
+export default Facts;
