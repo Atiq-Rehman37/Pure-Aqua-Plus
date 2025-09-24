@@ -14,10 +14,10 @@ const Form = () => {
 
     emailjs
       .sendForm(
-        "service_5735cl5", // replace with EmailJS service ID
-        "template_1abyyqu", // replace with EmailJS template ID
+        "service_sxjwg7i", // replace with EmailJS service ID
+        "template_bnkc28k", // replace with EmailJS template ID
         form.current,
-        "84P7C8mHeTZpVtJmg" // replace with EmailJS public key
+        "sxoPhbfSJVJCFwPKk" // replace with EmailJS public key
       )
       .then(
         () => {
