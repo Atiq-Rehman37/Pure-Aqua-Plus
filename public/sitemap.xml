@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Homepage -->
+  <!-- Home Page -->
   <url>
     <loc>https://pureaquaplus.net/</loc>
     <changefreq>daily</changefreq>
@@ -13,6 +13,13 @@
     <loc>https://pureaquaplus.net/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Shop Page -->
+  <url>
+    <loc>https://pureaquaplus.net/shop</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <!-- Contact Page -->
